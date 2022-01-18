@@ -15,11 +15,11 @@
   </head>
   <body>
     <div class="main-container">
-
       <div class="titulo-busca">
-        <h2>Exibindo resultado de busca por "Covid 19"</h2>
-        <h4>Encontramos um total de 20 resultados para a sua busca</h4>
-        <a routerLink="/post">Adicionar Post</a><br>
+        <h2>Adicione um post</h2>
+        <br>
+        <a routerLink="/home">Home</a><br>
+
       </div>
 
       <div class="container">
@@ -39,15 +39,25 @@
         </div>
       </div>
     </div>
-    <div *ngIf="posts$ | async as posts; " class="cards-container">
-      <div *ngFor="let post of posts" class="card">
-        <img src="../assets/image/covid.jpg" alt="imagem-covid" />
-        <h4>{{ post.title }}</h4>
-        <p>
-          {{ post.body }}
-        </p>
-        <a href="#"><p>Ler mais</p></a>
-      </div>
+    <div class="cards-container">
+      <form novalidate [formGroup]="form" class="form-container">
+        <div>
+          <label for="title">Titulo</label>
+          <input type="text" id="title" placeholder="Titulo" formControlName="title"/>
+        </div>
+        <div >
+          <label for="body">Descrição</label>
+          <textarea id="body" formControlName="body"></textarea>
+
+          <div class="button-container">
+            <button class="btn-submit" type="submit" (click)="onSubmit()">Adicionar</button>
+            <button class="btn-cancel" type="button" (click)="onCancel()">Cancelar</button>
+          </div>
+        </div>
+
+
+      </form>
+
     </div>
- </body>
+  </body>
 </html>
