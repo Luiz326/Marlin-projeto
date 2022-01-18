@@ -1,0 +1,109 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container input{
+  position: relative;
+  width: 180px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(180, 179, 179);
+  padding: 6px;
+}
+
+span{
+  background-color: aqua;
+  width: 40px;
+  height: 50px;
+  border: 1px solid black;
+
+}
+
+.input-search{
+  margin-top: 80px;
+  margin-left: -35px;
+  height: 25px;
+
+}
+
+.input-search h4, input{
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+#lupa{
+  background-image:url(../../assets/image/lupa.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 160px 6px;
+
+}
+
+.titulo-busca{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.titulo-busca h4{
+  font-weight: 200;
+}
+
+.cards-container{
+  position: absolute;
+  display: flex;
+  margin-top: 50px;
+  width:80%;
+  height: 100vh;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+
+}
+.card img{
+  width: 230px;
+  border-radius: 7px 7px 0 0;
+}
+.card{
+  margin-left: 50px;
+  margin-bottom: 40px;
+  width: 230px;
+  height: 400px;
+  border: 1px solid rgb(228, 225, 225);
+  border-radius: 7px;
+}
+
+.card h4{
+  margin:20px 20px 10px 20px;
+}
+.card p{
+  margin:20px 20px 10px 20px;
+  font-size: 12px;
+}
+
+.card a{
+  text-decoration: none;
+  color: rgb(41, 106, 246);
+}
+.menu-lateral{
+  float: right;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 15%;
+
+}
+
+.menu-lateral h4{
+  margin-top: 80px;
+
+}
+
+.menu-lateral p{
+ padding: 4px;
+ margin: 3px 9px 3px 0px;
+ border-bottom: 1px solid rgb(180, 179, 179) ;
+ width: 170px;
+
+}
+
